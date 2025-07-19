@@ -170,6 +170,7 @@ function Contractor() {
       <div className="card-list">
         {contractors.map((contractor, idx) => (
           <div className="contractor-card-horizontal-card" key={idx}>
+            
             <div className='contractor-mob'>
               <img src={contractor.image} alt="Contractor" className="contractor-img-horizontal" />
               <div className='contractor-info-horizontal'>
@@ -177,6 +178,7 @@ function Contractor() {
                   <p >{contractor.info}</p>
               </div>
             </div>
+
             
             <div className="contractor-info">
               <h3 style={{marginBottom:"20px"}}>{contractor.name}</h3>

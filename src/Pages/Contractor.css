@@ -54,10 +54,12 @@ body{
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 .contractor-card-horizontal-card {
   display: flex;
+  justify-items: start;
   background: linear-gradient(to right,#2c798e, #93bed0); 
   padding: 15px;
   border-radius: 10px;
@@ -81,7 +83,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left:10%;
+  margin-left: none;
+  flex: 2;
 }
 
 .contractor-info h3 {
@@ -109,14 +112,23 @@ body{
   background-color: #1bb466;
 }
 .contractor-info-horizontal {
-  width:30%;
+  width:50%;
   background-color:#3e839aff;
-  padding:20px;
+  padding:10px;
   border-radius:10px;
   line-height:25px;
-  height:100%;
-  padding-bottom:10px;
 }
+.contractor-mob{
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+}
+.contractor-mob img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+
 @media screen and (max-width: 768px) {
   .filter-bar{
     justify-content: start;
