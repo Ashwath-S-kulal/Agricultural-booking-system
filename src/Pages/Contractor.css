@@ -1,0 +1,142 @@
+body{
+  background: linear-gradient(to right, #4ca1af, #c4e0e5);
+
+}
+.contractor-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 2;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dropdowncontractors 
+ {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.date-picker {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-button {
+  padding: 10px 15px;
+  background-color: #1cc410;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #1bb466;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contractor-card-horizontal-card {
+  display: flex;
+  background: linear-gradient(to right,#2c798e, #93bed0); 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.contractor-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contractor-img-horizontal {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.contractor-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:10%;
+}
+
+.contractor-info h3 {
+  margin: 0;
+}
+.contractor-info p {
+  margin:9px 0px;
+}
+
+
+.details-button {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #0a2558b7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s ease;
+}
+
+.details-button:hover {
+  background-color: #1bb466;
+}
+.contractor-info-horizontal {
+  width:30%;
+  background-color:#3e839aff;
+  padding:20px;
+  border-radius:10px;
+  line-height:25px;
+  height:100%;
+  padding-bottom:10px;
+}
+@media screen and (max-width: 768px) {
+  .filter-bar{
+    justify-content: start;
+  }
+  .dropdowncontractors{
+    flex: 1;
+    min-width: 100px;
+  }
+  .contractor-card-horizontal-card {
+    flex-direction:column;
+  }
+  .contractor-info-horizontal{
+    width: 100%;
+    padding: 10px;
+  }
+  .contractor-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px 20px 10px;
+  }
+}

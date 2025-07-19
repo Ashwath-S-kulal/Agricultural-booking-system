@@ -1,0 +1,90 @@
+.registration-form {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+  background:  #e7ece7;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.registration-form h2 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.registration-form p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.registration-form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px; /* added space between rows */
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+  flex: 1;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background-color: rgb(231, 240, 242);
+}
+
+.registration-form textarea {
+  resize: none;
+}
+
+.registration-form button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.registration-form button:hover {
+  background-color: #218838;
+}
+@media screen and (max-width: 600px) {
+  .registration-form {
+    width: 82%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .registration-form h2 {
+    font-size: 24px;
+  }
+
+  .registration-form p {
+    font-size: 14px;
+  }
+
+  .registration-form input,
+  .registration-form select,
+  .registration-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .registration-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+}

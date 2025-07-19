@@ -1,0 +1,132 @@
+/* Container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #4ca1af, #c4e0e5);
+  flex-wrap: wrap;
+}
+
+/* Left Side */
+.contact-left {
+  flex: 1;
+  min-width: 280px;
+  margin-right: 40px;
+}
+
+.contact-left h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact-left p {
+  font-size: 17px;
+  color:white;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Right Side Form */
+.contact-right {
+  flex: 1.5;
+  min-width: 300px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Row with First/Last Name */
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row input {
+  flex: 1;
+  width: 100%;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  background-color: #e7ece7;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f35b25;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #152d85;
+  color: white;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 22px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+button[type="submit"]:hover {
+  background-color: #d94e1f;
+}
+
+/* Success Message */
+.success-message {
+  color: white;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  .contact-left{
+    margin-left:20px;
+    
+  }
+
+
+  .form-row {
+    flex-direction: column;
+  }
+
+
+  button[type="submit"] {
+    align-self: stretch;
+  }
+}
