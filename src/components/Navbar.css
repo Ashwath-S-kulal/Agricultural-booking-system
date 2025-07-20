@@ -82,14 +82,34 @@
     color: white;
     cursor: pointer;
   }
+  .mobile-closer {
+    display: flex;
+    justify-content: end;
+  }
 
   .mobile-menu {
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: #0f172a;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
+    width: 80%;
     gap: 15px;
+    margin: 13px 10px 10px 5px;
+    border-radius: 15px;
   }
+  .mobile-menu::before {
+    content: '';
+    position: absolute;
+    top: -0.6rem;
+    left: 1.1rem;
+    width:20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: #0f172a;
+    border-left: 1px solid #0f172a;
+    border-top: 1px solid #0f172a;
+}
 
   .mobile-menu .nav-link {
     font-size: 18px;

@@ -3,8 +3,7 @@ import React from 'react'
 function About() {
   return (
     <div style={{ padding: '40px', maxWidth: '80%', 
-      marginTop: '0px' ,marginLeft:"auto", marginRight:"auto",backgroundColor: '#f9f9f9', 
-      borderRadius: '8px', textAlign:"justify" }}>
+      marginTop: '0px' ,marginLeft:"auto", marginRight:"auto",backgroundColor: '#f9f9f9', textAlign:"justify" }}>
         <h1>About Project</h1>
 
         <h2>Introduction</h2>

@@ -39,7 +39,9 @@ export default function Navbar() {
 
         {menuOpen && (
           <div className="mobile-menu">
-            <FaTimes onClick={() => setMenuOpen(false)} className="close-icon" />
+            <div className="mobile-closer">
+              <FaTimes onClick={() => setMenuOpen(false)} className="close-icon" />
+            </div>
             <NavLink to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</NavLink>
             <NavLink to="/contractor" className="nav-link" onClick={() => setMenuOpen(false)}>Contractors</NavLink>
             <NavLink to="/service" className="nav-link" onClick={() => setMenuOpen(false)}>Service</NavLink>

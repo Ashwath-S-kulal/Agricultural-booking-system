@@ -119,6 +119,17 @@ button[type="submit"]:hover {
     margin-left:20px;
     
   }
+  .contact-right{
+    justify-content: center;
+    padding: 25px;
+  }
+  input[type="text"],
+  input[type="email"], 
+  input[type="tel"],
+  textarea {
+    width: 90%;
+  }
+
 
 
   .form-row {
