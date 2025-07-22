@@ -53,6 +53,16 @@
 .submit-btn:hover {
   background-color: #16a34a;
 }
+.back-button-booking {
+  background: #2d9fab;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 0%;
+  cursor: pointer;
+  font-weight:lighter;
+  left: 0px;
+}
 @media screen and (max-width: 600px) {
   .booking-page {
     margin: auto;

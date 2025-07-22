@@ -84,6 +84,9 @@ function Home() {
             
           </div>
           <div className="hero-right">
+            <h3 style={{background:"#0fa9bdff" , padding:"12px",color:"white", marginTop:"0px",
+              position:"sticky",top:"0",textAlign:"center",fontWeight:"lighter"
+            }}>Recommendations</h3>
             {Bookings.map((Booking, index) => (
               <div className="booking-banner">
                 <div className="booking-content">

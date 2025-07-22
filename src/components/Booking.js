@@ -1,5 +1,6 @@
 // BookingPage.js
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./Booking.css";
 
 const BookingPage = () => {
@@ -64,6 +65,7 @@ const BookingPage = () => {
 
   return (
     <div className="booking-page">
+      <NavLink to="/contractorDetails"><button className="back-button-booking">← Back</button></NavLink>
       <h1>Booking</h1>
 
       {/* Farmer Details */}

@@ -10,7 +10,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div>
+    <div className="navbar-total-container" style={{position:"sticky", top:"0px"}}>
       {/* Desktop Nav */}
       <div className='nav-lap'>
         <nav className="navbar">

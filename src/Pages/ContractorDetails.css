@@ -6,13 +6,15 @@
 }
 
 .back-button {
-  background: #188024;
+  background: #117a85;
   color: white;
   padding: 8px 14px;
-  border-radius: 8px;
+  border: none;
+  border-radius: 0%;
   cursor: pointer;
   font-weight: bold;
 }
+
 
 .contractor-name-heading {
   margin-top: 25px;
