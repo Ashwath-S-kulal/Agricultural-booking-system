@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div style={{ padding: '40px', maxWidth: '80%', 
+    <div style={{ padding: '40px', maxWidth: '100%', 
       marginTop: '0px' ,marginLeft:"auto", marginRight:"auto",backgroundColor: '#f9f9f9', textAlign:"justify" }}>
         <h1>About Project</h1>
 
@@ -34,11 +34,9 @@ function About() {
           <li>Filter results by date, location, machine type, or price</li>
           <li>View contractor profile, machine photos, and past reviews</li>
           <li>Select desired machine(s) and specify:</li>
-          <ul>
-            <li>Start and end dates</li>
-            <li>Land area to be serviced</li>
-            <li>Whether a worker/operator is needed</li>
-          </ul>
+            <li style={{listStyle:"none"}}>* Start and end dates</li>
+            <li style={{listStyle:"none"}}>* Land area to be serviced</li>
+            <li style={{listStyle:"none"}}>* Whether a worker/operator is needed</li>
         </ol>
 
         <h2>Conclusion</h2>

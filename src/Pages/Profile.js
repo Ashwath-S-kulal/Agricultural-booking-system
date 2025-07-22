@@ -29,7 +29,7 @@ const FarmerProfilePage = () => {
       <h1>Farmer Profile</h1>
       
       <div className="profile-sections">
-        <div style={{display:"flex", gap:"20px", width:"100%"}} className='profile-card'>
+        <div style={{display:"flex", gap:"20px", width:"95%"}} className='profile-card'>
           <img src={Image} alt="img" style={{ width:"200px",borderRadius:"10px"}}></img>
           <div className="profile-card1">
             <h2>Personal Information</h2>

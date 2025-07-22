@@ -8,6 +8,9 @@ import "./Navbar.css" // update with your image path
 export default function Navbar() {
   const [openProfile, setOpenProfile] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const toggledownbar = () => {
+    setMenuOpen(prev => !prev);
+  }
 
   return (
     <div className="navbar-total-container" style={{position:"sticky", top:"0px"}}>
@@ -33,7 +36,7 @@ export default function Navbar() {
       {/* Mobile Nav */}
       <div className="nav-mob">
         <div className="mobile-header">
-          <FaBars onClick={() => setMenuOpen(true)} className="menu-icon" />
+          <FaBars onClick={() => toggledownbar()} className="menu-icon" />
           <img src={image} alt="Profile" className="profile-img" onClick={() => setOpenProfile(prev => !prev)} />
         </div>
 
@@ -42,6 +45,7 @@ export default function Navbar() {
             <div className="mobile-closer">
               <FaTimes onClick={() => setMenuOpen(false)} className="close-icon" />
             </div>
+            <hr style={{width:"100%",margin:"0px"}}/>
             <NavLink to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</NavLink>
             <NavLink to="/contractor" className="nav-link" onClick={() => setMenuOpen(false)}>Contractors</NavLink>
             <NavLink to="/service" className="nav-link" onClick={() => setMenuOpen(false)}>Service</NavLink>
