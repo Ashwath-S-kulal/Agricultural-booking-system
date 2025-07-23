@@ -139,6 +139,7 @@ body{
   }
   .contractor-card-horizontal-card {
     flex-direction:column;
+    background: linear-gradient(to bottom, #2c798e, #93bed0); 
   }
   .contractor-info-horizontal{
     width: 100%;
