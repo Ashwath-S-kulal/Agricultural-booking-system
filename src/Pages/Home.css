@@ -48,19 +48,19 @@
 }
 
 .hero-right {
-  flex: 2;
-  background-color: #11c6d3;
   overflow-y: scroll;
-  border: 1px solid black;
-  box-shadow: inset 0 0 10px rgba(7, 0, 25, 0.854);
-  margin: 20px 20px 0px 20px;
-  border-bottom: none;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-bottom-left-radius: 0; 
-  border-bottom-right-radius: 0;  max-height: 95%;
+  max-height: 95%;
+  width: 900px;
 
 }
+.sections{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  background-color: #52a8be;
+}
+
 .hero-right::-webkit-scrollbar {
   width: 0px;
 }
@@ -68,7 +68,6 @@
 .booking-banner {
   background-color: #0e6478;
   padding: 30px;
-  border-radius: 20px;
   margin: 20px;
   color: white;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
@@ -140,10 +139,6 @@
   .hero-right {
     width: 90%;
     margin: 10px auto;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 0; 
-    border-bottom-right-radius: 0;
     max-height: 500px;
     margin-bottom: 30px;
   }

@@ -83,10 +83,9 @@ function Home() {
             <NavLink to="/about"><button className="read-more">READ MORE</button></NavLink>
             
           </div>
-          <div className="hero-right">
-            <h3 style={{background:"#0fa9bdff" , padding:"12px",color:"white", marginTop:"0px",
-              position:"sticky",top:"0",textAlign:"center",fontWeight:"lighter"
-            }}>Recommendations</h3>
+          <div className='sections'>
+            <h2 style={{color:"white", marginBottom:"0"}}>Recommendation</h2>
+          <div className="hero-right">      
             {Bookings.map((Booking, index) => (
               <div className="booking-banner">
                 <div className="booking-content">
@@ -101,6 +100,8 @@ function Home() {
               </div>
             ))}
           </div>
+          </div>
+          
         </section> 
   )
 }
